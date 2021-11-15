@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">HolaMundo</string>
+    <string name="app_name">DC Comics</string>
     <string name="superman">Superman</string>
-    <string name="clar_kent">Clark Kent</string>
+    <string name="sub_nombre">Nombre:</string>
+    <string name="nombre_superman">Clark Kent</string>
+    <string name="sub_poderes">Poderes:</string>
+    <string name="poderes_superman">super fuerza, volar, invulnerabilidad, super velocidad, visión caliente, aliento frío, vision de rayos X, Audición sobrehumana, factor de curación</string>
 </resources>
