@@ -5,4 +5,7 @@
     <string name="nombre_superman">Clark Kent</string>
     <string name="sub_poderes">Poderes:</string>
     <string name="poderes_superman">super fuerza, volar, invulnerabilidad, super velocidad, visión caliente, aliento frío, vision de rayos X, Audición sobrehumana, factor de curación</string>
+    <string name="titulo_registro">REGISTRO DE SUPERHEROE</string>
+    <string name="boton_registrar">Registrar</string>
+    <string name="registro_nombre">Nombre</string>
 </resources>
