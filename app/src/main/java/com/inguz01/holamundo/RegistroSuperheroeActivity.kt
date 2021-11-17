@@ -5,6 +5,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.textfield.TextInputEditText
 
 class RegistroSuperheroeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,10 +15,15 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
         val registrarButton: Button = findViewById(R.id.registrar_button)
         val nombreEditText: EditText = findViewById(R.id.nombre_edit_text)
         val infoTextView: TextView =  findViewById(R.id.info_text_view)
+        val estaturaEditText: TextInputEditText = findViewById(R.id.estaturaEditText)
+
 
         registrarButton.setOnClickListener {
-           val nombre = nombreEditText.text
-            infoTextView.text = nombre
+           val nombre : String = nombreEditText.text.toString()
+            val estatura : Float = estaturaEditText.text.toString().toFloat()
+            infoTextView.text = getString(R.string.info, nombre, estatura)
+
+
 
         }
 

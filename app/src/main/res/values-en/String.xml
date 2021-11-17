@@ -9,4 +9,6 @@
     <string name="titulo_registro">SUPERHEROE REGISTER</string>
     <string name="boton_registrar">Sign in</string>
     <string name="registro_nombre">Name</string>
+    <string name="estatura">Height</string>
+    <string name="info">"info: %s %f"</string>
 </resources>

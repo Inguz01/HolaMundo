@@ -8,4 +8,6 @@
     <string name="titulo_registro">REGISTRO DE SUPERHEROE</string>
     <string name="boton_registrar">Registrar</string>
     <string name="registro_nombre">Nombre</string>
+    <string name="estatura">Estatura</string>
+    <string name="info">"info: %s %f"</string>
 </resources>
