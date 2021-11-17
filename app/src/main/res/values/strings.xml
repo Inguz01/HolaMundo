@@ -9,5 +9,8 @@
     <string name="boton_registrar">Registrar</string>
     <string name="registro_nombre">Nombre</string>
     <string name="estatura">Estatura</string>
-    <string name="info">"info: %s %f"</string>
+    <string name="info">"Nombre: %s, estatura: %f, género: %s"</string>
+    <string name="genero">Género</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
 </resources>
