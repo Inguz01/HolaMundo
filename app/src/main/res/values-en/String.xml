@@ -10,7 +10,7 @@
     <string name="boton_registrar">Sign in</string>
     <string name="registro_nombre">Name</string>
     <string name="estatura">Height</string>
-    <string name="info">"Nombre: %s, estatura: %f, género: %s", poderes: %s"</string>
+    <string name="info">"Nombre: %s, estatura: %f, género: %s", poderes: %s, ciudadNacimiento: %s"</string>
     <string name="genero">Genre</string>
     <string name="masculino">Male</string>
     <string name="femenino">Female</string>
@@ -18,4 +18,5 @@
     <string name="superfuerza">Super Strength</string>
     <string name="velocidad">Super Speed</string>
     <string name="telepatia">Telepaty</string>
+    <string name="ciudad_nacimiento">Ciudad de Nacimiento</string>
 </resources>

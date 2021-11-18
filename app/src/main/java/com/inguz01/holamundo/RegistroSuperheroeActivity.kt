@@ -18,6 +18,7 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
         val fuerzaCheckBox: CheckBox = findViewById(R.id.Super_Fuerza_Check_Box)
         val velocidadCheckBox: CheckBox = findViewById(R.id.velocidad_check_box)
         val telepatiaCheckBox:CheckBox = findViewById(R.id.Telepatia_check_box)
+        val ciudadNacimientoSpinner: Spinner = findViewById(R.id.ciudad_nacimiento_spínner)
 
 
         registrarButton.setOnClickListener {
@@ -25,6 +26,8 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
             val estatura : Float = estaturaEditText.text.toString().toFloat()
             val genero : String
             var poderes = ""
+            val ciudadNacimiento = ciudadNacimientoSpinner.selectedItem.toString()
+
 
             if (masculinoradioButton.isChecked)
                 genero = getString(R.string.masculino)
@@ -36,7 +39,7 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
             if (velocidadCheckBox.isChecked) poderes = poderes + " " + getString(R.string.velocidad)
             if (telepatiaCheckBox.isChecked) poderes = poderes + " " + getString(R.string.telepatia)
 
-            infoTextView.text = getString(R.string.info, nombre, estatura, genero, poderes)
+            infoTextView.text = getString(R.string.info, nombre, estatura, genero, poderes, ciudadNacimiento)
 
         }
 

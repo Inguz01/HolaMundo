@@ -9,7 +9,7 @@
     <string name="boton_registrar">Registrar</string>
     <string name="registro_nombre">Nombre</string>
     <string name="estatura">Estatura</string>
-    <string name="info">"Nombre: %s, estatura: %f, género: %s", poderes: %s"</string>
+    <string name="info">"Nombre: %s, estatura: %f, género: %s", poderes: %s", ciudadNacimiento: %s</string>
     <string name="genero">Género</string>
     <string name="masculino">Masculino</string>
     <string name="femenino">Femenino</string>
@@ -17,4 +17,11 @@
     <string name="superfuerza">Super Fuerza</string>
     <string name="velocidad">Velocidad</string>
     <string name="telepatia">Telepatía</string>
+    <string name="ciudad_nacimiento">Ciudad de Nacimiento</string>
+    <string-array name="lista_ciudades">
+        <item>Ciudad Central</item>
+        <item>Ciudad Gótica</item>
+        <item>Tesmicira</item>
+        <item>Metrópolis</item>
+    </string-array>
 </resources>
