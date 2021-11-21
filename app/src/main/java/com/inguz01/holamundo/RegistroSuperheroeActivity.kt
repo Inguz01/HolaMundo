@@ -22,7 +22,12 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
 
 
         registrarButton.setOnClickListener {
-           val nombre : String = nombreEditText.text.toString()
+
+            if (estaturaEditText.text.toString() == "" || nombreEditText.text.isEmpty())
+                Toast.makeText(this, "Debe digitar el nombre y la estatura", Toast.LENGTH_SHORT).show()
+            else
+            {
+            val nombre : String = nombreEditText.text.toString()
             val estatura : Float = estaturaEditText.text.toString().toFloat()
             val genero : String
             var poderes = ""
@@ -40,7 +45,7 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
             if (telepatiaCheckBox.isChecked) poderes = poderes + " " + getString(R.string.telepatia)
 
             infoTextView.text = getString(R.string.info, nombre, estatura, genero, poderes, ciudadNacimiento)
-
+            }
         }
 
     }
