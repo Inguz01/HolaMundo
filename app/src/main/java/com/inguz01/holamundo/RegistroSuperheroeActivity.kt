@@ -7,6 +7,7 @@ import com.google.android.material.textfield.TextInputEditText
 
 class RegistroSuperheroeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_superheroe)
 
@@ -19,7 +20,6 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
         val velocidadCheckBox: CheckBox = findViewById(R.id.velocidad_check_box)
         val telepatiaCheckBox:CheckBox = findViewById(R.id.Telepatia_check_box)
         val ciudadNacimientoSpinner: Spinner = findViewById(R.id.ciudad_nacimiento_spínner)
-
 
         registrarButton.setOnClickListener {
 
@@ -45,8 +45,36 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
             if (telepatiaCheckBox.isChecked) poderes = poderes + " " + getString(R.string.telepatia)
 
             infoTextView.text = getString(R.string.info, nombre, estatura, genero, poderes, ciudadNacimiento)
+
+            val superheroe = Superheroe(nombre, estatura, poderes, ciudadNacimiento, genero)
+
+
             }
         }
 
     }
+
+    override fun onStar() {
+        super.onStart()
+    }
+
+    override fun onResume() {
+        super.onResume()
+    }
+
+    override fun onPause() {
+        super.onPause()
+    }
+
+    override fun onStop() {
+        super.onStop()
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+    }
+
 }
